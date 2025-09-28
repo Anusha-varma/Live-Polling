@@ -1,0 +1,67 @@
+/* Reset and base styles */
+body, html, #root, .home-container {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #2d3436;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.role-buttons button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: 2px solid #0984e3;
+  background: #fff;
+  color: #0984e3;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.role-buttons button.selected,
+.role-buttons button:hover {
+  background: #0984e3;
+  color: #fff;
+}
+
+.continue-btn {
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  background: #00b894;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+.continue-btn:hover {
+  background: #019875;
+}
+
+.error-msg {
+  color: #d63031;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
